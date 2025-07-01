@@ -22,6 +22,8 @@ A comprehensive, domain-aware benchmarking framework for evaluating embedding mo
 16. [Performance Optimization](#performance-optimization)
 17. [Troubleshooting](#troubleshooting)
 
+download corpora from the https://drive.google.com/drive/folders/1OOwsyjigUn5J-bnVBP4Y3mvmPEV6trmq?usp=sharing
+
 ## Overview
 
 This **Ultimate RAG Benchmark** addresses the critical need for **domain-aware multi-turn conversational evaluation**. Unlike standard benchmarks that use generic corpora, this system enables evaluation with **domain-specific external corpora**, providing realistic assessment of how embedding models perform in specialized domains like finance, healthcare, legal, technical documentation, and more.
