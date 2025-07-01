@@ -1,0 +1,66 @@
+{
+  "benchmark_info": {
+    "models_tested": 2,
+    "datasets_tested": 1,
+    "successful_evaluations": 2,
+    "total_time_seconds": 23.169507265090942,
+    "timestamp": "2025-06-27T19:24:41.130468",
+    "max_conversations_per_eval": 20
+  },
+  "individual_results": [
+    {
+      "model": "all-MiniLM-L6-v2",
+      "dataset": "quac",
+      "conversations_evaluated": 20,
+      "metrics": {
+        "total_turns": 40,
+        "avg_turns_per_conv": 2.0,
+        "ndcg_10": 1.0,
+        "recall_10": 0.5,
+        "precision_10": 0.3,
+        "f1_10": 0.375,
+        "map": 1.0,
+        "mrr": 1.0,
+        "context_coherence": 0.535,
+        "turn_progression": 0.825,
+        "answer_relevance": 0.11973852759752518,
+        "retrieval_quality": 0.37713546939194204,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 5.260853290557861,
+        "encoding_time": 4.003603458404541,
+        "evaluation_time": 1.441019058227539,
+        "total_time": 15.43038034439087
+      },
+      "timestamp": "2025-06-27T19:24:33.385088"
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "dataset": "quac",
+      "conversations_evaluated": 20,
+      "metrics": {
+        "total_turns": 40,
+        "avg_turns_per_conv": 2.0,
+        "ndcg_10": 0.975,
+        "recall_10": 0.5958333333333334,
+        "precision_10": 0.3575,
+        "f1_10": 0.446875,
+        "map": 0.975,
+        "mrr": 0.975,
+        "context_coherence": 0.535,
+        "turn_progression": 0.75,
+        "answer_relevance": 0.10143198445439339,
+        "retrieval_quality": 0.41787235364317893,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 3.454451084136963,
+        "encoding_time": 0.6634442806243896,
+        "evaluation_time": 0.8384671211242676,
+        "total_time": 7.735065698623657
+      },
+      "timestamp": "2025-06-27T19:24:41.122730"
+    }
+  ]
+}

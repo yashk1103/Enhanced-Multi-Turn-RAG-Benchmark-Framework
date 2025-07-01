@@ -1,0 +1,287 @@
+{
+  "dataset": "nfcorpus",
+  "num_turns": 3,
+  "metrics": {
+    "avg_ndcg": 0.65883497678809,
+    "avg_recall": 0.17058152532326992,
+    "final_turn_ndcg": 0.7156885959639253,
+    "context_preservation": 0.98,
+    "conversation_success_rate": 0.86,
+    "total_conversations": 50,
+    "total_turns": 150
+  },
+  "time_seconds": 12.969274282455444,
+  "timestamp": "2025-06-18T16:56:03.475176",
+  "sample_conversations": [
+    {
+      "conversation_id": "PLAIN-2",
+      "turns": [
+        {
+          "turn_id": 0,
+          "query": "Do Cholesterol Statin Drugs Cause Breast Cancer?",
+          "contextualized_query": "Do Cholesterol Statin Drugs Cause Breast Cancer?",
+          "query_type": "initial",
+          "ndcg_10": 0.867270682538032,
+          "recall_10": 0.2916666666666667,
+          "retrieved_docs": [
+            "MED-2440",
+            "MED-2431",
+            "MED-10",
+            "MED-4827",
+            "MED-14"
+          ],
+          "retrieved_relevant_count": 7
+        },
+        {
+          "turn_id": 1,
+          "query": "What are the benefits of recent?",
+          "contextualized_query": "Do Cholesterol Statin Drugs Cause Breast Cancer? What are the benefits of recent?",
+          "query_type": "follow_up",
+          "ndcg_10": 0.9583931804322742,
+          "recall_10": 0.25,
+          "retrieved_docs": [
+            "MED-2431",
+            "MED-2440",
+            "MED-10",
+            "MED-2429",
+            "MED-14"
+          ],
+          "retrieved_relevant_count": 6
+        },
+        {
+          "turn_id": 2,
+          "query": "Which is better: this or nationwide?",
+          "contextualized_query": "Do Cholesterol Statin Drugs Cause Breast Cancer? What are the benefits of recent? Which is better: this or nationwide?",
+          "query_type": "comparison",
+          "ndcg_10": 0.9885545106464496,
+          "recall_10": 0.25,
+          "retrieved_docs": [
+            "MED-2431",
+            "MED-14",
+            "MED-10",
+            "MED-2429",
+            "MED-2440"
+          ],
+          "retrieved_relevant_count": 6
+        }
+      ],
+      "relevant_docs_count": 24
+    },
+    {
+      "conversation_id": "PLAIN-12",
+      "turns": [
+        {
+          "turn_id": 0,
+          "query": "Exploiting Autophagy to Live Longer",
+          "contextualized_query": "Exploiting Autophagy to Live Longer",
+          "query_type": "initial",
+          "ndcg_10": 0.3834409525148764,
+          "recall_10": 0.06666666666666667,
+          "retrieved_docs": [
+            "MED-2501",
+            "MED-2502",
+            "MED-4711",
+            "MED-2514",
+            "MED-2510"
+          ],
+          "retrieved_relevant_count": 2
+        },
+        {
+          "turn_id": 1,
+          "query": "Can you tell me more about exploiting?",
+          "contextualized_query": "Exploiting Autophagy to Live Longer Can you tell me more about exploiting?",
+          "query_type": "elaboration",
+          "ndcg_10": 0.5990618630238729,
+          "recall_10": 0.13333333333333333,
+          "retrieved_docs": [
+            "MED-2514",
+            "MED-2328",
+            "MED-2501",
+            "MED-4115",
+            "MED-2502"
+          ],
+          "retrieved_relevant_count": 4
+        },
+        {
+          "turn_id": 2,
+          "query": "Which is better: this or signal?",
+          "contextualized_query": "Exploiting Autophagy to Live Longer Can you tell me more about exploiting? Which is better: this or signal?",
+          "query_type": "comparison",
+          "ndcg_10": 0.49547823222311166,
+          "recall_10": 0.1,
+          "retrieved_docs": [
+            "MED-2501",
+            "MED-2514",
+            "MED-2603",
+            "MED-2328",
+            "MED-2502"
+          ],
+          "retrieved_relevant_count": 3
+        }
+      ],
+      "relevant_docs_count": 30
+    },
+    {
+      "conversation_id": "PLAIN-23",
+      "turns": [
+        {
+          "turn_id": 0,
+          "query": "How to Reduce Exposure to Alkylphenols Through Your Diet",
+          "contextualized_query": "How to Reduce Exposure to Alkylphenols Through Your Diet",
+          "query_type": "initial",
+          "ndcg_10": 0.6199062332840657,
+          "recall_10": 0.022222222222222223,
+          "retrieved_docs": [
+            "MED-2658",
+            "MED-1845",
+            "MED-5358",
+            "MED-1169",
+            "MED-4251"
+          ],
+          "retrieved_relevant_count": 2
+        },
+        {
+          "turn_id": 1,
+          "query": "Can you explain \"modified\" in more detail?",
+          "contextualized_query": "How to Reduce Exposure to Alkylphenols Through Your Diet Can you explain \"modified\" in more detail?",
+          "query_type": "elaboration",
+          "ndcg_10": 0.7525583045803861,
+          "recall_10": 0.03333333333333333,
+          "retrieved_docs": [
+            "MED-2658",
+            "MED-3100",
+            "MED-2652",
+            "MED-3102",
+            "MED-1845"
+          ],
+          "retrieved_relevant_count": 3
+        },
+        {
+          "turn_id": 2,
+          "query": "What exactly is rhinoconjunctivitis?",
+          "contextualized_query": "How to Reduce Exposure to Alkylphenols Through Your Diet Can you explain \"modified\" in more detail? What exactly is rhinoconjunctivitis?",
+          "query_type": "clarification",
+          "ndcg_10": 0.8772153153380493,
+          "recall_10": 0.022222222222222223,
+          "retrieved_docs": [
+            "MED-2658",
+            "MED-4563",
+            "MED-5222",
+            "MED-2649",
+            "MED-2449"
+          ],
+          "retrieved_relevant_count": 2
+        }
+      ],
+      "relevant_docs_count": 90
+    },
+    {
+      "conversation_id": "PLAIN-33",
+      "turns": [
+        {
+          "turn_id": 0,
+          "query": "What\u2019s Driving America\u2019s Obesity Problem?",
+          "contextualized_query": "What\u2019s Driving America\u2019s Obesity Problem?",
+          "query_type": "initial",
+          "ndcg_10": 0.48580027541592796,
+          "recall_10": 0.09375,
+          "retrieved_docs": [
+            "MED-5006",
+            "MED-1056",
+            "MED-1650",
+            "MED-2723",
+            "MED-1448"
+          ],
+          "retrieved_relevant_count": 3
+        },
+        {
+          "turn_id": 1,
+          "query": "What problems does activity solve?",
+          "contextualized_query": "What\u2019s Driving America\u2019s Obesity Problem? What problems does activity solve?",
+          "query_type": "follow_up",
+          "ndcg_10": 0.637792381727562,
+          "recall_10": 0.15625,
+          "retrieved_docs": [
+            "MED-1056",
+            "MED-1650",
+            "MED-2717",
+            "MED-2723",
+            "MED-1334"
+          ],
+          "retrieved_relevant_count": 5
+        },
+        {
+          "turn_id": 2,
+          "query": "Which is better: this or exercise?",
+          "contextualized_query": "What\u2019s Driving America\u2019s Obesity Problem? What problems does activity solve? Which is better: this or exercise?",
+          "query_type": "comparison",
+          "ndcg_10": 0.8231864951053192,
+          "recall_10": 0.125,
+          "retrieved_docs": [
+            "MED-2717",
+            "MED-1508",
+            "MED-1056",
+            "MED-2718",
+            "MED-5008"
+          ],
+          "retrieved_relevant_count": 4
+        }
+      ],
+      "relevant_docs_count": 32
+    },
+    {
+      "conversation_id": "PLAIN-44",
+      "turns": [
+        {
+          "turn_id": 0,
+          "query": "Who Should be Careful About Curcumin?",
+          "contextualized_query": "Who Should be Careful About Curcumin?",
+          "query_type": "initial",
+          "ndcg_10": 0.6016542359913447,
+          "recall_10": 0.05172413793103448,
+          "retrieved_docs": [
+            "MED-2240",
+            "MED-2788",
+            "MED-2815",
+            "MED-2604",
+            "MED-2607"
+          ],
+          "retrieved_relevant_count": 3
+        },
+        {
+          "turn_id": 1,
+          "query": "What are some examples of indian?",
+          "contextualized_query": "Who Should be Careful About Curcumin? What are some examples of indian?",
+          "query_type": "follow_up",
+          "ndcg_10": 1.0,
+          "recall_10": 0.034482758620689655,
+          "retrieved_docs": [
+            "MED-2810",
+            "MED-2788",
+            "MED-2812",
+            "MED-2824",
+            "MED-2240"
+          ],
+          "retrieved_relevant_count": 2
+        },
+        {
+          "turn_id": 2,
+          "query": "Can you clarify what you mean by indian?",
+          "contextualized_query": "Who Should be Careful About Curcumin? What are some examples of indian? Can you clarify what you mean by indian?",
+          "query_type": "clarification",
+          "ndcg_10": 0.89117143244364,
+          "recall_10": 0.06896551724137931,
+          "retrieved_docs": [
+            "MED-2788",
+            "MED-2810",
+            "MED-2812",
+            "MED-2240",
+            "MED-2824"
+          ],
+          "retrieved_relevant_count": 4
+        }
+      ],
+      "relevant_docs_count": 58
+    }
+  ]
+}

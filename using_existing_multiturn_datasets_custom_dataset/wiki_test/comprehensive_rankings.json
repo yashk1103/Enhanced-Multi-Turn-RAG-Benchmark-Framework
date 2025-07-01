@@ -1,0 +1,34 @@
+{
+  "NDCG@10": {
+    "all-MiniLM-L6-v2": 1.0,
+    "all-mpnet-base-v2": 0.975
+  },
+  "Recall@10": {
+    "all-mpnet-base-v2": 0.5958333333333334,
+    "all-MiniLM-L6-v2": 0.5
+  },
+  "Precision@10": {
+    "all-mpnet-base-v2": 0.3575,
+    "all-MiniLM-L6-v2": 0.3
+  },
+  "F1@10": {
+    "all-mpnet-base-v2": 0.446875,
+    "all-MiniLM-L6-v2": 0.375
+  },
+  "MAP": {
+    "all-MiniLM-L6-v2": 1.0,
+    "all-mpnet-base-v2": 0.975
+  },
+  "MRR": {
+    "all-MiniLM-L6-v2": 1.0,
+    "all-mpnet-base-v2": 0.975
+  },
+  "Context_Coherence": {
+    "all-MiniLM-L6-v2": 0.535,
+    "all-mpnet-base-v2": 0.535
+  },
+  "Answer_Relevance": {
+    "all-MiniLM-L6-v2": 0.11973852759752518,
+    "all-mpnet-base-v2": 0.10143198445439339
+  }
+}

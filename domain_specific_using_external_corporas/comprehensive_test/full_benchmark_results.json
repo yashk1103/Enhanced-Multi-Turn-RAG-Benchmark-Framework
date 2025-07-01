@@ -1,0 +1,130 @@
+{
+  "benchmark_info": {
+    "models_tested": 2,
+    "datasets_tested": 2,
+    "successful_evaluations": 4,
+    "external_corpus": null,
+    "max_corpus_docs": null,
+    "total_time_seconds": 39.85520887374878,
+    "timestamp": "2025-06-27T19:30:47.379212",
+    "max_conversations_per_eval": 20
+  },
+  "individual_results": [
+    {
+      "model": "all-MiniLM-L6-v2",
+      "dataset": "quac",
+      "external_corpus": null,
+      "conversations_evaluated": 20,
+      "corpus_size": 20,
+      "metrics": {
+        "total_turns": 40,
+        "avg_turns_per_conv": 2.0,
+        "ndcg_10": 1.0,
+        "recall_10": 0.5,
+        "precision_10": 0.3,
+        "f1_10": 0.375,
+        "map": 1.0,
+        "mrr": 1.0,
+        "context_coherence": 0.535,
+        "turn_progression": 0.825,
+        "answer_relevance": 0.11973852759752518,
+        "retrieval_quality": 0.37713546939194204,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 4.724005460739136,
+        "encoding_time": 1.8829751014709473,
+        "evaluation_time": 0.4296755790710449,
+        "total_time": 10.718115329742432
+      },
+      "timestamp": "2025-06-27T19:30:18.237268"
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "dataset": "topicqa",
+      "external_corpus": null,
+      "conversations_evaluated": 20,
+      "corpus_size": 20,
+      "metrics": {
+        "total_turns": 251,
+        "avg_turns_per_conv": 12.55,
+        "ndcg_10": 1.0,
+        "recall_10": 0.3014608233731739,
+        "precision_10": 0.1808764940239044,
+        "f1_10": 0.22609561752988047,
+        "map": 1.0,
+        "mrr": 1.0,
+        "context_coherence": 0.8863511681303826,
+        "turn_progression": 0.7770562770562771,
+        "answer_relevance": 0.25411703214214176,
+        "retrieval_quality": 0.604234692941149,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 3.1472392082214355,
+        "encoding_time": 0.23035907745361328,
+        "evaluation_time": 2.476053237915039,
+        "total_time": 10.514211177825928
+      },
+      "timestamp": "2025-06-27T19:30:28.752723"
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "dataset": "quac",
+      "external_corpus": null,
+      "conversations_evaluated": 20,
+      "corpus_size": 20,
+      "metrics": {
+        "total_turns": 40,
+        "avg_turns_per_conv": 2.0,
+        "ndcg_10": 0.975,
+        "recall_10": 0.5958333333333334,
+        "precision_10": 0.3575,
+        "f1_10": 0.446875,
+        "map": 0.975,
+        "mrr": 0.975,
+        "context_coherence": 0.535,
+        "turn_progression": 0.75,
+        "answer_relevance": 0.10143198445439339,
+        "retrieval_quality": 0.41787235364317893,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 3.440030574798584,
+        "encoding_time": 0.5449717044830322,
+        "evaluation_time": 0.7759859561920166,
+        "total_time": 7.59643030166626
+      },
+      "timestamp": "2025-06-27T19:30:36.350561"
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "dataset": "topicqa",
+      "external_corpus": null,
+      "conversations_evaluated": 20,
+      "corpus_size": 20,
+      "metrics": {
+        "total_turns": 251,
+        "avg_turns_per_conv": 12.55,
+        "ndcg_10": 1.0,
+        "recall_10": 0.29282868525896416,
+        "precision_10": 0.17569721115537848,
+        "f1_10": 0.2196215139442231,
+        "map": 1.0,
+        "mrr": 1.0,
+        "context_coherence": 0.8863511681303826,
+        "turn_progression": 0.7878787878787878,
+        "answer_relevance": 0.2755159819910748,
+        "retrieval_quality": 0.6250880396223638,
+        "conversations_evaluated": 20
+      },
+      "timing": {
+        "model_load_time": 3.28377628326416,
+        "encoding_time": 0.4831669330596924,
+        "evaluation_time": 4.389454364776611,
+        "total_time": 11.022036790847778
+      },
+      "timestamp": "2025-06-27T19:30:47.373572"
+    }
+  ]
+}

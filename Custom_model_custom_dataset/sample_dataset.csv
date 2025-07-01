@@ -1,0 +1,6 @@
+conversation_id,turn_id,question,answer,context,topic
+conv_1,0,What is machine learning?,Machine learning is a subset of AI that enables computers to learn and improve from experience without being explicitly programmed.,Introduction to AI and ML concepts,Machine Learning Basics
+conv_1,1,How does it differ from traditional programming?,Unlike traditional programming where rules are explicitly coded ML algorithms learn patterns from data to make predictions or decisions.,Introduction to AI and ML concepts. Previous: What is machine learning?,Machine Learning Basics
+conv_1,2,What are the main types?,The main types are supervised learning unsupervised learning and reinforcement learning.,ML types and categories discussion,Machine Learning Basics
+conv_2,0,What is deep learning?,Deep learning is a subset of machine learning that uses neural networks with multiple layers to model complex patterns.,Advanced ML concepts,Deep Learning
+conv_2,1,Why is it called deep?,It's called 'deep' because it uses neural networks with many hidden layers allowing it to learn hierarchical representations.,Deep learning architecture discussion,Deep Learning
