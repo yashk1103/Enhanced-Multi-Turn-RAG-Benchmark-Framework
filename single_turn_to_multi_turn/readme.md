@@ -113,7 +113,7 @@ print("Installation successful!")
 ### Basic Evaluation
 
 ```bash
-python multiturn_rag_evaluator.py
+python multiturn_evaluation.py
 ```
 
 This runs with default settings:
@@ -125,19 +125,19 @@ This runs with default settings:
 ### Custom Model Evaluation
 
 ```bash
-python multiturn_rag_evaluator.py --model "sentence-transformers/all-mpnet-base-v2"
+python multiturn_evaluation.py --model "sentence-transformers/all-mpnet-base-v2"
 ```
 
 ### Different Dataset
 
 ```bash
-python multiturn_rag_evaluator.py --dataset "scifact" --num_turns 4
+python multiturn_evaluation.py --dataset "scifact" --num_turns 4
 ```
 
 ### Complete Custom Run
 
 ```bash
-python multiturn_rag_evaluator.py \
+python multiturn_evaluation.py \
   --model "BAAI/bge-large-en-v1.5" \
   --dataset "msmarco" \
   --num_turns 5 \
@@ -325,22 +325,22 @@ qrels = {
 
 ```bash
 # Default evaluation
-python multiturn_rag_evaluator.py
+python multiturn_evaluation.py
 
 # Specify model
-python multiturn_rag_evaluator.py --model "all-mpnet-base-v2"
+python multiturn_evaluation.py --model "all-mpnet-base-v2"
 
 # Specify dataset
-python multiturn_rag_evaluator.py --dataset "scifact"
+python multiturn_evaluation.py --dataset "scifact"
 
 # Set number of turns
-python multiturn_rag_evaluator.py --num_turns 5
+python multiturn_evaluation.py --num_turns 5
 
 # Custom output directory
-python multiturn_rag_evaluator.py --output_dir "./results"
+python multiturn_evaluation.py --output_dir "./results"
 
 # Adjust batch size
-python multiturn_rag_evaluator.py --batch_size 32
+python multiturn_evaluation.py --batch_size 32
 ```
 
 ### Model Selection
@@ -348,16 +348,16 @@ python multiturn_rag_evaluator.py --batch_size 32
 **Popular Models:**
 ```bash
 # Fast models
-python multiturn_rag_evaluator.py --model "all-MiniLM-L6-v2"
+python multiturn_evaluation.py --model "all-MiniLM-L6-v2"
 
 # Balanced models
-python multiturn_rag_evaluator.py --model "all-mpnet-base-v2"
+python multiturn_evaluation.py --model "all-mpnet-base-v2"
 
 # High-performance models
-python multiturn_rag_evaluator.py --model "BAAI/bge-large-en-v1.5"
+python multiturn_evaluation.py --model "BAAI/bge-large-en-v1.5"
 
 # Specialized models
-python multiturn_rag_evaluator.py --model "sentence-transformers/multi-qa-mpnet-base-cos-v1"
+python multiturn_evaluation.py --model "sentence-transformers/multi-qa-mpnet-base-cos-v1"
 ```
 
 ### Dataset Selection
@@ -365,29 +365,29 @@ python multiturn_rag_evaluator.py --model "sentence-transformers/multi-qa-mpnet-
 **Domain-Specific Evaluation:**
 ```bash
 # Scientific domains
-python multiturn_rag_evaluator.py --dataset "scifact"
-python multiturn_rag_evaluator.py --dataset "trec-covid"
+python multiturn_evaluation.py --dataset "scifact"
+python multiturn_evaluation.py --dataset "trec-covid"
 
 # General web search
-python multiturn_rag_evaluator.py --dataset "msmarco"
-python multiturn_rag_evaluator.py --dataset "natural-questions"
+python multiturn_evaluation.py --dataset "msmarco"
+python multiturn_evaluation.py --dataset "natural-questions"
 
 # Specialized domains
-python multiturn_rag_evaluator.py --dataset "fiqa"      # Financial
-python multiturn_rag_evaluator.py --dataset "nfcorpus"  # Nutrition
+python multiturn_evaluation.py --dataset "fiqa"      # Financial
+python multiturn_evaluation.py --dataset "nfcorpus"  # Nutrition
 ```
 
 ### Performance Optimization
 
 ```bash
 # Memory-constrained systems
-python multiturn_rag_evaluator.py --batch_size 4
+python multiturn_evaluation.py --batch_size 4
 
 # High-performance systems
-python multiturn_rag_evaluator.py --batch_size 64
+python multiturn_evaluation.py --batch_size 64
 
 # Quick testing
-python multiturn_rag_evaluator.py --dataset "nfcorpus" --num_turns 2
+python multiturn_evaluation.py --dataset "nfcorpus" --num_turns 2
 ```
 
 ## Output and Results
@@ -507,7 +507,7 @@ Results saved to: ./multiturn_results/nfcorpus_multiturn_results.json
 ### Custom Evaluation Pipeline
 
 ```python
-from multiturn_rag_evaluator import MultiTurnRAGEvaluator
+from multiturn_evaluation import MultiTurnRAGEvaluator
 
 # Initialize evaluator
 evaluator = MultiTurnRAGEvaluator("all-mpnet-base-v2", batch_size=16)
@@ -527,7 +527,7 @@ print(f"Context Preservation: {metrics['context_preservation']:.2%}")
 ### Custom Template Generation
 
 ```python
-from multiturn_rag_evaluator import SyntheticMultiTurnGenerator
+from multiturn_evaluation import SyntheticMultiTurnGenerator
 
 # Initialize generator
 generator = SyntheticMultiTurnGenerator()
@@ -651,10 +651,10 @@ def load_custom_dataset(self, data_path):
 **Memory Errors:**
 ```bash
 # Reduce batch size
-python multiturn_rag_evaluator.py --batch_size 4
+python multiturn_evaluation.py --batch_size 4
 
 # Use smaller dataset for testing
-python multiturn_rag_evaluator.py --dataset "nfcorpus"
+python multiturn_evaluation.py --dataset "nfcorpus"
 ```
 
 **Dataset Download Failures:**
@@ -684,7 +684,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 **Quick Test:**
 ```bash
-python multiturn_rag_evaluator.py --dataset "nfcorpus" --num_turns 2
+python multiturn_evaluation.py --dataset "nfcorpus" --num_turns 2
 ```
 
 **Model Test:**
