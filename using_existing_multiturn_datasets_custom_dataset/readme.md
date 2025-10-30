@@ -117,7 +117,7 @@ print("Installation successful!")
 ### Default Benchmark (QuAC + TopiOCQA)
 
 ```bash
-python enhanced_benchmark.py
+python performance.py
 ```
 
 This runs the complete benchmark with:
@@ -130,20 +130,20 @@ This runs the complete benchmark with:
 ### Quick Model Comparison
 
 ```bash
-python enhanced_benchmark.py --models "all-MiniLM-L6-v2" "all-mpnet-base-v2" "BAAI/bge-base-en-v1.5"
+python performance.py --models "all-MiniLM-L6-v2" "all-mpnet-base-v2" "BAAI/bge-base-en-v1.5"
 ```
 
 ### Single Dataset Focus
 
 ```bash
-python enhanced_benchmark.py --datasets "quac"
-python enhanced_benchmark.py --datasets "topicqa"
+python performance.py --datasets "quac"
+python performance.py --datasets "topicqa"
 ```
 
 ### Fast Evaluation (Testing)
 
 ```bash
-python enhanced_benchmark.py \
+python performance.py \
   --models "all-MiniLM-L6-v2" \
   --max_conversations 10 \
   --no-graphs
@@ -318,13 +318,13 @@ How does image recognition work?,Image recognition uses...,Technical CV details,
 
 ```bash
 # Single custom dataset
-python enhanced_benchmark.py --datasets custom_conversations.json
+python performance.py --datasets custom_conversations.json
 
 # Multiple custom datasets
-python enhanced_benchmark.py --datasets data1.json data2.csv data3.jsonl
+python performance.py --datasets data1.json data2.csv data3.jsonl
 
 # Mixed standard and custom
-python enhanced_benchmark.py --datasets quac custom_data.json topicqa
+python performance.py --datasets quac custom_data.json topicqa
 ```
 
 ### Field Recognition
@@ -347,13 +347,13 @@ python enhanced_benchmark.py --datasets quac custom_data.json topicqa
 
 **Complete Evaluation** (Default):
 ```bash
-python enhanced_benchmark.py
+python performance.py
 # Tests all 13 default models on QuAC and TopiOCQA
 ```
 
 **Speed vs. Quality Comparison**:
 ```bash
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "all-MiniLM-L6-v2" \
   "all-mpnet-base-v2" \
   "BAAI/bge-large-en-v1.5"
@@ -361,7 +361,7 @@ python enhanced_benchmark.py --models \
 
 **Domain-Specific Models**:
 ```bash
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "sentence-transformers/multi-qa-mpnet-base-cos-v1" \
   "sentence-transformers/msmarco-distilbert-base-v4" \
   "BAAI/bge-base-en-v1.5"
@@ -369,7 +369,7 @@ python enhanced_benchmark.py --models \
 
 **Custom Model Integration**:
 ```bash
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "./local/fine-tuned-model" \
   "organization/custom-model" \
   "all-mpnet-base-v2"
@@ -556,38 +556,38 @@ The system automatically generates different visualizations based on your evalua
 
 ```bash
 # Complete default benchmark
-python enhanced_benchmark.py
+python performance.py
 
 # Custom output directory
-python enhanced_benchmark.py -o ./my_results
+python performance.py -o ./my_results
 
 # Adjust memory usage
-python enhanced_benchmark.py --batch_size 8
+python performance.py --batch_size 8
 
 # Limit conversations for testing
-python enhanced_benchmark.py --max_conversations 10
+python performance.py --max_conversations 10
 ```
 
 ### Model Specification
 
 ```bash
 # Single model evaluation
-python enhanced_benchmark.py --models "all-mpnet-base-v2"
+python performance.py --models "all-mpnet-base-v2"
 
 # Compare specific models
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "all-MiniLM-L6-v2" \
   "all-mpnet-base-v2" \
   "BAAI/bge-base-en-v1.5"
 
 # Include custom models
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "./local/fine-tuned-model" \
   "organization/custom-model" \
   "all-mpnet-base-v2"
 
 # Fast models only
-python enhanced_benchmark.py --models \
+python performance.py --models \
   "all-MiniLM-L6-v2" \
   "all-MiniLM-L12-v2"
 ```
@@ -596,19 +596,19 @@ python enhanced_benchmark.py --models \
 
 ```bash
 # Standard datasets only
-python enhanced_benchmark.py --datasets "quac" "topicqa"
+python performance.py --datasets "quac" "topicqa"
 
 # Single dataset focus
-python enhanced_benchmark.py --datasets "quac"
-python enhanced_benchmark.py --datasets "topicqa"
+python performance.py --datasets "quac"
+python performance.py --datasets "topicqa"
 
 # Custom datasets only
-python enhanced_benchmark.py --datasets \
+python performance.py --datasets \
   "custom_conversations.json" \
   "evaluation_data.csv"
 
 # Mixed standard and custom
-python enhanced_benchmark.py --datasets \
+python performance.py --datasets \
   "quac" \
   "custom_data.json" \
   "topicqa"
@@ -618,13 +618,13 @@ python enhanced_benchmark.py --datasets \
 
 ```bash
 # Disable visualizations (faster execution)
-python enhanced_benchmark.py --no-graphs
+python performance.py --no-graphs
 
 # Custom output location
-python enhanced_benchmark.py -o /path/to/results
+python performance.py -o /path/to/results
 
 # Complete custom configuration
-python enhanced_benchmark.py \
+python performance.py \
   --models "all-mpnet-base-v2" "BAAI/bge-base-en-v1.5" \
   --datasets "quac" "custom_data.json" \
   --max_conversations 50 \
@@ -727,28 +727,28 @@ MRR          BAAI/bge-large-en-v1.5                  0.3789
 **Batch Size Configuration**:
 ```bash
 # Memory-constrained systems
-python enhanced_benchmark.py --batch_size 4
+python performance.py --batch_size 4
 
 # Standard systems
-python enhanced_benchmark.py --batch_size 16
+python performance.py --batch_size 16
 
 # High-memory systems
-python enhanced_benchmark.py --batch_size 32
+python performance.py --batch_size 32
 
 # GPU-accelerated systems
-python enhanced_benchmark.py --batch_size 64
+python performance.py --batch_size 64
 ```
 
 **Conversation Limits**:
 ```bash
 # Quick testing
-python enhanced_benchmark.py --max_conversations 5
+python performance.py --max_conversations 5
 
 # Standard evaluation
-python enhanced_benchmark.py --max_conversations 25
+python performance.py --max_conversations 25
 
 # Comprehensive evaluation
-python enhanced_benchmark.py --max_conversations 100
+python performance.py --max_conversations 100
 ```
 
 ### Model Loading Optimization
@@ -774,7 +774,7 @@ for model in large_models:
 ### Custom Evaluation Pipeline
 
 ```python
-from enhanced_benchmark import EnhancedMultiTurnBenchmark
+from performance import EnhancedMultiTurnBenchmark
 
 # Initialize with custom settings
 benchmark = EnhancedMultiTurnBenchmark(batch_size=16)
@@ -880,25 +880,25 @@ for group_name, models in model_groups.items():
 **Memory Optimization**:
 ```bash
 # Reduce batch size for memory-constrained systems
-python enhanced_benchmark.py --batch_size 4
+python performance.py --batch_size 4
 
 # Limit conversations for testing
-python enhanced_benchmark.py --max_conversations 10
+python performance.py --max_conversations 10
 
 # Single dataset evaluation
-python enhanced_benchmark.py --datasets "quac"
+python performance.py --datasets "quac"
 ```
 
 **Speed Optimization**:
 ```bash
 # Fast models only
-python enhanced_benchmark.py --models "all-MiniLM-L6-v2"
+python performance.py --models "all-MiniLM-L6-v2"
 
 # Disable visualizations for faster execution
-python enhanced_benchmark.py --no-graphs
+python performance.py --no-graphs
 
 # Increase batch size (if memory allows)
-python enhanced_benchmark.py --batch_size 32
+python performance.py --batch_size 32
 ```
 
 **Comprehensive Evaluation Strategy**:
@@ -922,10 +922,10 @@ python enhanced_benchmark.py --batch_size 32
 **Memory Errors**:
 ```bash
 # Reduce batch size
-python enhanced_benchmark.py --batch_size 4
+python performance.py --batch_size 4
 
 # Limit evaluation scope
-python enhanced_benchmark.py --max_conversations 5 --models "all-MiniLM-L6-v2"
+python performance.py --max_conversations 5 --models "all-MiniLM-L6-v2"
 ```
 
 **Dataset Loading Failures**:
