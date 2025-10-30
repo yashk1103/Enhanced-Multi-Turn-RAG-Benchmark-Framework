@@ -44,25 +44,25 @@ This **Ultimate RAG Benchmark** addresses the critical need for **domain-aware m
 
 ## Key Features
 
-### 🎯 Domain-Aware Evaluation
+### Domain-Aware Evaluation
 - **External Corpus Support**: Load domain-specific document collections
 - **Flexible Corpus Formats**: JSON, JSONL, CSV with automatic field detection
 - **Scalable Processing**: Handle large corpora with configurable document limits
 - **Domain Matching**: Combine appropriate datasets with relevant corpora
 
-### 🤖 Comprehensive Model Support
+### Comprehensive Model Support
 - **13 Default Models**: From fast (MiniLM) to high-performance (BGE-large)
 - **Custom Models**: Local paths, Hugging Face identifiers, fine-tuned models
 - **Batch Processing**: Optimized for efficient large-scale evaluation
 - **Memory Management**: Adaptive batch sizing for different hardware
 
-### 📊 Advanced Visualization & Analysis
+### Advanced Visualization & Analysis
 - **Corpus Impact Analysis**: Visualize how external corpora affect performance
 - **Domain-Specific Charts**: Performance breakdowns by corpus type
 - **Adaptive Reporting**: Charts adapt to single/multiple models/datasets/corpora
 - **PDF Reports**: Comprehensive professional reports with all visualizations
 
-### 🔧 Flexible Data Pipeline
+###  Flexible Data Pipeline
 - **Multiple Dataset Formats**: JSON, CSV, JSONL with intelligent structure detection
 - **Conversation Assembly**: Automatic multi-turn conversation creation from Q&A pairs
 - **Field Mapping**: Flexible field recognition for various data schemas
@@ -253,7 +253,7 @@ python enhanced_rag_benchmark.py \
 
 ### Domain Matching Strategy
 
-**✅ Recommended Combinations**:
+**Recommended Combinations**:
 
 ```bash
 # General Knowledge Evaluation
@@ -269,18 +269,18 @@ python enhanced_rag_benchmark.py --datasets "custom_finance_qa.json" --corpus "f
 python enhanced_rag_benchmark.py --datasets "legal_conversations.csv" --corpus "govt_corpus.json"
 ```
 
-**⚠️ Domain Compatibility Warning**:
+**Domain Compatibility Warning**:
 
 **AVOID mismatched domain combinations** - they will produce poor results due to semantic mismatch:
 
 ```bash
-# ❌ BAD: General knowledge questions with finance corpus
+#  BAD: General knowledge questions with finance corpus
 --datasets "quac" --corpus "fiqa_corpus.json"  # Poor performance expected
 
-# ❌ BAD: Technical questions with government corpus  
+#  BAD: Technical questions with government corpus  
 --datasets "tech_support_qa.json" --corpus "govt_corpus.json"  # Low relevance
 
-# ❌ BAD: Finance questions with medical corpus
+# BAD: Finance questions with medical corpus
 --datasets "finance_qa.csv" --corpus "medical_corpus.jsonl"  # No semantic overlap
 ```
 
