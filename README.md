@@ -20,7 +20,7 @@ A comprehensive collection of benchmarking frameworks for evaluating Retrieval-A
     └── readme.md
 ```
 
-## 🚀 Framework Overview
+## Framework Overview
 
 ### 1. **Custom Model & Dataset Benchmark**
 - **File**: `Custom_model_custom_dataset/performance.py`
@@ -46,7 +46,7 @@ A comprehensive collection of benchmarking frameworks for evaluating Retrieval-A
 - **Features**: Standard dataset integration, custom model support, detailed metrics
 - **Use Case**: Benchmarking against established multi-turn conversation datasets
 
-## 🛠️ Quick Start
+## Quick Start
 
 Choose the framework that best fits your use case:
 
@@ -64,7 +64,7 @@ python single_turn_to_multi_turn/multiturn_evaluation.py --dataset "scifact"
 python using_existing_multiturn_datasets_custom_dataset/performance.py
 ```
 
-## 📊 Common Features
+## Common Features
 
 - **Multiple Embedding Models**: Support for 10+ state-of-the-art models
 - **Comprehensive Metrics**: NDCG@10, Recall@10, F1@10, MAP, MRR, context coherence
@@ -72,13 +72,13 @@ python using_existing_multiturn_datasets_custom_dataset/performance.py
 - **Custom Model Support**: Load local or Hugging Face models
 - **Flexible Output**: JSON results, CSV tables, PDF reports
 
-## 📋 Requirements
+## Requirements
 
 ```bash
 pip install sentence-transformers datasets pandas numpy scikit-learn matplotlib seaborn tabulate beir
 ```
 
-## 📖 Documentation
+## Documentation
 
 Each framework includes detailed documentation in its respective `readme.md` file with:
 - Specific installation instructions
